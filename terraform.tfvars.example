@@ -1,0 +1,35 @@
+organization_id = "YOUR_ORG_ID"
+billing_account = "YOUR_BILLING_ACCOUNT"
+
+region = "asia-south1"
+
+business_units = {
+  manufacturing = {
+    environments = ["dev", "prod"]
+    projects = {
+      dev  = "your-dev-project-id"
+      prod = "your-prod-project-id"
+    }
+  }
+}
+
+# VPN CONFIG
+onprem_peer_ip    = "X.X.X.X"
+vpn_shared_secret = "YOUR_SHARED_SECRET"
+onprem_cidr       = "192.168.0.0/16"
+
+# IAM
+org_admins = [
+  "user:your-email@example.com"
+]
+
+# Budget
+budget_amount = 1000
+
+# Logging
+log_bucket = "your-log-bucket-name"
+
+# Firewall source
+corp_ip_ranges = [
+  "YOUR_CORPORATE_CIDR"
+]
